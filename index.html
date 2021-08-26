@@ -117,18 +117,18 @@
 
                     <label>
                 <span for="quantity" >Product Quantity</span>
-                <input type="number" placeholder="Enter quantity" id="quantity" min="1" required>
+                <input type="number" placeholder="Enter quantity" id="quantity" min="1" value="required">
                 </label>
 
                     <label>
                 <span for="pic">Product Picture</span>
                 
                 </label>
-                    <input type="file" id="pic" accept="Image/*" required>
+                    <input type="file" id="pic" accept="Image/*">
 
                     <label>
                 <span for="price" >Product Price</span>
-                <input type="number" id="price" placeholder="(in Rupees)" min="1" required/>
+                <input type="number" id="price" placeholder="(in Rupees)" min="1">
                 </label>
 
                     <!-- <input type="submit" value="Add Product" onclick="store()"> -->
@@ -343,7 +343,7 @@
             var price = document.getElementById('price');
 
 
-            if (pname.value.length != 0 && quantity.value.length != 0 && price.value.length != 0) {
+            if (pname.value.length != 0 && imageURL.length!=0 && quantity.value.length != 0 && price.value.length != 0) {
                 if (pname.value[0] >= "0" && pname.value[0] <= "9") {
                     alert("You cannot begin product name with number");
                     return;
